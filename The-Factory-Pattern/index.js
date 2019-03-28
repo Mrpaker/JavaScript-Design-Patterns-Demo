@@ -23,6 +23,8 @@ VehicleFactory.prototype.createVehicle = function (options) {
      this.vehicleClass = Truck;
      break;
  }
+
+ return new this.vehicleClass(options);
 }
 
 var carFactory = new VehicleFactory();
